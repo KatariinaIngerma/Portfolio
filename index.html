@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ee">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Hello</title>
+</head>
+<body class="flex flex-col h-screen justify-between bg-gray-900 text-white">
+    <!-- Navigation Bar -->
+    <header class="py-2">
+        <div class="flex items-center justify-between px-5">
+            <div>
+                <h1 class="text-xl font-bold hover:text-pink-700">Katariina Ingerma</h1>
+            </div>
+            <nav class="flex items-center justify-end p-5">
+                <ul class="flex space-x-10">
+                    <li><a href="" class="text-lg text-black-500 hover:text-pink-700 active:text-pink-700">Home</a></li>
+                    <li><a href="about.html" class="text-lg text-black-500 hover:text-pink-700 active:text-pink-700">About</a></li>
+                    <li><a href="portfolio.html" class="text-lg text-black-500 hover:text-pink-700 active:text-pink-700">Projects</a></li>
+                    <li><a href="contact" class="text-lg text-black-500 hover:text-pink-700 active:text-pink-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Section 1-->
+    <div class="flex-1 flex flex-col md:flex-row items-center justify-center">
+        <!-- Section 1: Hello -->
+        <section class="md:flex-1 text-center p-8">
+            <h1 class="text-7xl font-bold">Hello!</h1>
+            <p class="text-lg p-5">My name is Katariina Ingerma.</p>
+            <button class="text-lg m-5 text-white bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-full focus:outline-none focus:shadow-outline-blue">
+                Contact me
+            </button>
+        </section>
+
+        <!-- Section 2: Picture -->
+        <div class="md:flex-1 mt-20">
+            <!-- You can replace the placeholder image URL with your actual image URL -->
+            <img src="res/img3.png" alt="Profile Picture" class="max-w-md max-h-full mx-auto object-cover">
+        </div>
+    </div>
+
+</body>
+
+</html>
