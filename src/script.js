@@ -18,3 +18,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        menuToggle.addEventListener('click', () => {
+            menuOverlay.classList.toggle('hidden');
+        });
+
+
+function filterProjects(category) {
+    // Get all project cards
+    var projectCards = document.querySelectorAll('.project-card');
+    
+     // If the category is 'all', show all projects; otherwise, filter based on the category
+    projectCards.forEach(function (card) {
+        if (category === 'all') {
+            card.style.display = 'block';
+        } else {
+            var cardCategory = card.classList.contains(category);
+            card.style.display = cardCategory ? 'block' : 'none';
+                }
+        });
+    }
