@@ -12,6 +12,13 @@
     <title>Emergency Alert App</title>
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- jQuery (required for lightbox2) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 </head>
 
 <body class="flex flex-col h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white">
@@ -22,7 +29,6 @@
             <div>
                 <h1 class="text-xl font-mono font-bold hover:text-pink-700">Katariina Ingerma</h1>
             </div>
-            <!-- Mobile Navigation - Burger Menu -->
             <div class="md:hidden">
                 <button id="menu-toggle" class="text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -50,52 +56,33 @@
             <a href="../portfolio.html" class="text-lg text-pink-500 hover:text-white">
                 <i class="fas fa-arrow-left mb-4"></i> Back to Portfolio
             </a>
-            <h1 class="text-4xl font-bold text-gray-100 pb-5">Emergency Alert App</h1>
+            <h1 class="text-4xl font-bold text-gray-100 pb-5">Image Classification with Convolutional Neural Networks</h1>
             <!-- Technologies Used -->
             <div class="flex justify-center items-center mb-8 space-x-4">
-                <i class="fab fa-html5 text-4xl text-gray-200"></i>
-                <i class="fab fa-css3-alt text-4xl text-gray-200"></i>
-                <i class="fab fa-js-square text-4xl text-gray-200"></i>
-                <i class="fab fa-react text-4xl text-gray-200"></i>
+                <i class="fab fa-python text-4xl text-gray-200"></i>
+                <img src="../res/scikitlearn.svg" alt="Scikit-Learn" class="w-12 h-12">
             </div>
             <!--About the projct-->
             <div class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-200 mb-2">About the project</h2>
-                <p class="text-gray-400 font-mono">The Wildlife Emergency Application is web application that seeks to provide a platform to collectively and cohesively coordinate the wildlife rescue efforts in Estonia. The main goal of the app will be to enable the public to easily and quickly notify the the Estonian Wildlife Center when they happen to notice an animal that may be in need of assistance or a check-up. By filling out a form, describing the situtation, a report will be sent to a central ticketing system, overseen by the volunteers at EWC (Estonian Wildlife Center), who can then respond appropriately and organize help to the animal in need.</p>
-            </div>
-
-            <!-- Role Description -->
-            <div class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-200 mb-2">My Role</h2>
-                <p class="text-gray-400 font-mono">As part of the Emergency Alert App development team, I played a multifaceted role. My responsibilities included frontend development, testing, and DevOps tasks. I contributed to the user interface using HTML, CSS, and JavaScript (React). I ensured the application's reliability through comprehensive testing, and I implemented DevOps practices for continuous integration and deployment.</p>
-            </div>
+                <p class="text-gray-400 font-mono">
+                    This project involved the application of natural language processing and machine learning techniques to categorize Estonian articles. Various models, including Bag-of-Words, TF-IDF, and Word2Vec, were implemented for text classification. The project aimed to accurately classify articles into predefined categories ("www.advent.ee", "www.bioneer.ee", "www.lapsemure.ee", "www.naisteleht.ee", "arvamus.postimees.ee").
+                </p>
 
             <!-- Project Screens -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid my-10">
                 <!-- Screen 1 -->
                 <div>
                     <a href="../res/web1-2.png" data-lightbox="screens" data-title="Emergency Alert App - Screen 1">
-                        <img src="../res/web1-2.png" alt="Emergency Alert App - Dashboard" class="rounded-md">
-                    </a>
-                </div>
-                <!-- Screen 2 -->
-                <div>
-                    <a href="../res/web1-3.png" data-lightbox="screens" data-title="Emergency Alert App - Screen 2">
-                        <img src="../res/web1-3.png" alt="Emergency Alert App - Profile" class="rounded-md">
-                    </a>
-                </div>
-                <!-- Screen 3 -->
-                <div>
-                    <a href="../res/web1-4.png" data-lightbox="screens" data-title="Emergency Alert App - Screen 3">
-                        <img src="../res/web1-4.png" alt="Emergency Alert App - Registration form" class="rounded-md">
+                        <img src="../res/data1-1.png" alt="" class="rounded-md">
                     </a>
                 </div>
             </div>
 
             <!-- GitLab Link -->
             <div class="mt-8">
-                <h2 class="text-2xl font-bold text-gray-200 mb-2">GitLab Repository</h2>
-                <a href="https://gitlab.com/katariinaingerma/emergency-alert-app/-/tree/main" target="_blank" class="text-pink-500 hover:underline">GitLab Repository</a>
+                <h2 class="text-2xl font-bold text-gray-200 mb-2">Github Repository</h2>
+                <a href="" target="_blank" class="text-pink-500 hover:underline">Github Repository</a>
             </div>
 
         </div>

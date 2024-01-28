@@ -15,14 +15,24 @@
     <title>Portfolio - Katariina Ingerma</title>
 </head>
 
-<body class="flex flex-col h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+<body class="flex flex-col min-h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white bg-fixed">
     <!-- Navigation Bar -->
     <header class="py-2">
         <div class="flex items-center justify-between px-5">
             <div>
                 <h1 class="text-xl font-mono font-bold hover:text-pink-700">Katariina Ingerma</h1>
             </div>
-            <nav class="flex items-center justify-end p-5">
+            <!-- Mobile Navigation - Burger Menu -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:flex items-center justify-end p-5">
                 <ul class="flex space-x-10">
                     <li><a href="index.html" class="text-lg text-black-500 hover:text-pink-500">Home</a></li>
                     <li><a href="about.html" class="text-lg text-black-500 hover:text-pink-500 active:text-pink-700">About</a></li>
@@ -38,13 +48,12 @@
             <div class="flex flex-col items-center mb-8">
                 <h1 class="text-4xl font-bold text-gray-100 pb-5">My Projects</h1>
                 <!-- Project Tabs -->
-                <div class="mb-8">
-                    <button onclick="filterProjects('all')" class="bg-gray-700 text-white px-4 py-2 mr-2 focus:outline-none">All</button>
-                    <button onclick="filterProjects('data-science')" class="bg-gray-700 text-white px-4 py-2 mr-2 focus:outline-none">Data Science Projects</button>
-                    <button onclick="filterProjects('web')" class="bg-gray-700 text-white px-4 py-2 mr-2 focus:outline-none">Web Projects</button>
+                <div class="mb-4 md:mb-8 flex flex-wrap md:flex-row md:items-center">
+                    <button onclick="filterProjects('all')" class="bg-gray-700 text-white px-4 py-2 mr-2 mb-2 focus:outline-none md:mb-0">All</button>
+                    <button onclick="filterProjects('data-science')" class="bg-gray-700 text-white px-4 py-2 mr-2 mb-2 focus:outline-none md:mb-0">Data Science Projects</button>
+                    <button onclick="filterProjects('web')" class="bg-gray-700 text-white px-4 py-2 mr-2 mb-2 focus:outline-none md:mb-0">Web Projects</button>
                 </div>
             </div>
-
             <!-- Project Cards -->
             <div id="projects" class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                 <!-- Web Project 1 -->
@@ -55,23 +64,23 @@
                     <img src="res/web1-1.png" alt="Web Project 1" class="rounded-md mx-auto">
                 </a>
                 <!-- Data Science Project 1 -->
-                <a href="projects/web_project1.html" class="project-card data-science bg-gray-700 p-4 rounded-md block">
-                    <p class="bg-pink-500 font-bold text-sm px-3 py-2 ml-2 rounded-full inline-block">Data</p>
+                <a href="projects/data_project1.html" class="project-card data-science bg-gray-700 p-4 rounded-md block">
+                    <p class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block">Data</p>
                     <h1 class="text-3xl font-bold text-gray-200 my-5">Text Classification of Estonian Articles</h1>
                     <p class="font-mono text-gray-400 mb-4">The models include Bag-of-words, Bag-of-words with lemmas, Bag-of-words with lemmas and stop-words, Word2Vec, and Word2Vec with preprocessing.</p>
                     <img src="res/data1-1.png" alt="Web Project 1" class="rounded-md">
                 </a>
                 <!-- Data Science Project 2 -->
-                <a href="projects/web_project1.html" class="project-card data-science bg-gray-700 p-4 rounded-md block">
+                <a href="projects/data_project2.html" class="project-card data-science bg-gray-700 p-4 rounded-md block">
                     <p class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block">Data</p>
                     <h1 class="text-3xl font-bold text-gray-200 my-5">Text Classification of Estonian Articles with Neural Networks</h1>
                     <p class="font-mono text-gray-400 mb-4">Utilizing LSTM in Keras and fine-tuning a BERT model.</p>
                     <img src="res/data1-1.png" alt="Web Project 1" class="rounded-md">
                 </a>
                 <!-- Data Science Project 3 -->
-                <a href="projects/web_project1.html" class="project-card data-science bg-gray-700 p-4 rounded-md block">
+                <a href="projects/data_project3.html" class="project-card data-science bg-gray-700 p-4 rounded-md block">
                     <p class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block">Data</p>
-                    <h1 class="text-3xl font-bold text-gray-200 my-5">Text Classification of Cat and Dog pictures CNN</h1>
+                    <h1 class="text-3xl font-bold text-gray-200 my-5">Image Classification with Convolutional Neural Networks</h1>
                     <p class="font-mono text-gray-400 mb-4">Using a deep learning model to classify images as either cats or dogs. It is based on the Keras library and trained on a dataset of cat and dog images.</p>
                     <img src="res/data3-1.png" alt="Web Project 1" class="rounded-md mx-auto">
                 </a>
@@ -115,6 +124,18 @@
             </div>
             
         </section>
+    </div>
+     <!-- Mobile Navigation Overlay -->
+     <div id="menu-overlay" class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-90 hidden">
+        <!-- Mobile Navigation Content -->
+        <div class="flex items-center justify-center h-full">
+            <ul class="text-white text-lg">
+                <li><a href="" class="block py-3 px-6 hover:bg-gray-700">Home</a></li>
+                <li><a href="about.html" class="block py-3 px-6 hover:bg-gray-700">About</a></li>
+                <li><a href="portfolio.html" class="block py-3 px-6 hover:bg-gray-700">Projects</a></li>
+                <li><a href="contact.html" class="block py-3 px-6 hover:bg-gray-700">Contact</a></li>
+            </ul>
+        </div>
     </div>
     <script src="src/script.js"></script>
 </body>

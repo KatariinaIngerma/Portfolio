@@ -19,12 +19,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const menuToggle = document.getElementById('menu-toggle');
-        const menuOverlay = document.getElementById('menu-overlay');
+// mobile menu
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuOverlay = document.getElementById('menu-overlay');
 
-        menuToggle.addEventListener('click', () => {
-            menuOverlay.classList.toggle('hidden');
-        });
+    // Toggle menu visibility on menu button click
+    menuToggle.addEventListener('click', () => {
+        menuOverlay.classList.toggle('hidden');
+    });
+
+    // Close the menu when clicking outside of it or pressing the 'X' button
+    document.addEventListener('click', function (event) {
+        if (!menuToggle.contains(event.target) && !menuOverlay.contains(event.target)) {
+            menuOverlay.classList.add('hidden');
+        }
+    });
+
+    // Prevent clicks inside the menu from closing it
+    menuOverlay.addEventListener('click', function (event) {
+        event.stopPropagation();
+    });
+});
+
+
 
 
 function filterProjects(category) {
