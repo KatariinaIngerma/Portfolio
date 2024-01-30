@@ -1,81 +1,148 @@
 <!DOCTYPE html>
 <html lang="ee">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="res/k.png" type="image/png">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="res/k.png" type="image/png" />
     <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Hello</title>
-</head>
+  </head>
 
-<body class="flex flex-col min-h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white bg-cover bg-fixed">
+  <body
+    class="flex flex-col min-h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white bg-cover bg-fixed"
+  >
     <!-- Navigation Bar -->
     <header class="py-2">
-        <div class="flex items-center justify-between px-5">
-            <div>
-                <h1 class="text-xl font-mono font-bold hover:text-pink-700">Katariina Ingerma</h1>
-            </div>
-            <!-- Mobile Navigation - Burger Menu -->
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav class="hidden md:flex items-center justify-end p-5">
-                <ul class="flex space-x-10">
-                    <li><a href="" class="text-lg text-white hover:text-pink-700 active:text-pink-700 nav-link">Home</a></li>
-                    <li><a href="about.html" class="text-lg text-white hover:text-pink-700 active:text-pink-700">About</a></li>
-                    <li><a href="portfolio.html" class="text-lg text-white hover:text-pink-700 active:text-pink-700">Projects</a></li>
-                    <li><a href="contact.html" class="text-lg text-white hover:text-pink-700 active:text-pink-700">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="flex items-center justify-between px-5">
+        <div>
+          <h1 class="text-xl font-mono font-bold hover:text-pink-700">
+            Katariina Ingerma
+          </h1>
         </div>
+        <!-- Mobile Navigation - Burger Menu -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="hidden md:flex items-center justify-end p-5">
+          <ul class="flex space-x-10">
+            <li>
+              <a
+                href=""
+                class="text-lg text-white hover:text-pink-700 active:text-pink-700 nav-link"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-lg text-white hover:text-pink-700 active:text-pink-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="text-lg text-white hover:text-pink-700 active:text-pink-700"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-lg text-white hover:text-pink-700 active:text-pink-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!--Section 1-->
-    <div class="flex-1 flex flex-col md:flex-row items-center justify-center relative">
-        <!-- Section 1: Hello -->
-        <section class="md:flex-1 text-center p-8 bg-opacity-90">
-            <h1 class="text-7xl font-bold text-gray-100">Katariina</h1>
-            <h1 class="text-7xl font-bold text-gray-100">Ingerma</h1>
-            <p class="pt-10 pb-2 font-mono text-xl text-gray-400">Computer Science student based in Tallinn.</p>
-            <p class="pb-5 font-mono text-xl text-gray-400">Interested in data science, NLP and machine learning.</p>
-            <button class="text-lg m-5 text-white bg-pink-500 py-2 px-6 rounded-full focus:outline-none focus:shadow-outline-blue transform hover:scale-110 transition-transform duration-300 ease-in-out">
-                Contact me
-            </button>
-        </section>
-
-        <!-- Section 2: Picture -->
-        <div class="md:flex-1 mt-20">
-            <!-- You can replace the placeholder image URL with your actual image URL -->
-            <img src="res/img3.png" alt="Profile Picture" class="w-full max-h-full mx-auto object-cover">
-        </div>
-
+    <div
+      class="flex-1 flex flex-col md:flex-row items-center justify-center relative"
+    >
+      <!-- Section 1: Hello -->
+      <section class="md:flex-1 text-center p-8 bg-opacity-90">
+        <h1 class="text-7xl font-bold text-gray-100">Katariina</h1>
+        <h1 class="text-7xl font-bold text-gray-100">Ingerma</h1>
+        <p class="pt-10 pb-2 font-mono text-xl text-gray-400">
+          Computer Science student based in Tallinn.
+        </p>
+        <p class="pb-5 font-mono text-xl text-gray-400">
+          Interested in data science, NLP and machine learning.
+        </p>
+        <a href="contact.html">
+          <button
+            class="text-lg m-5 text-white bg-pink-500 py-2 px-6 rounded-full focus:outline-none focus:shadow-outline-blue transform hover:scale-110 transition-transform duration-300 ease-in-out"
+          >
+            Contact me
+          </button>
+        </a>
+      </section>
+      <!-- Section 2: Picture -->
+      <div class="md:flex-1 mt-20">
+        <!-- You can replace the placeholder image URL with your actual image URL -->
+        <img
+          src="res/img3.png"
+          alt="Profile Picture"
+          class="w-4/5 h-auto mx-auto object-cover"
+          loading="lazy"
+        />
+      </div>
     </div>
 
     <!-- Optional: Mobile Navigation Overlay -->
-    <div id="menu-overlay" class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-90 hidden">
-        <!-- Mobile Navigation Content -->
-        <div class="flex items-center justify-center h-full">
-            <ul class="text-white text-lg">
-                <li><a href="" class="block py-3 px-6 hover:bg-gray-700">Home</a></li>
-                <li><a href="about.html" class="block py-3 px-6 hover:bg-gray-700">About</a></li>
-                <li><a href="portfolio.html" class="block py-3 px-6 hover:bg-gray-700">Projects</a></li>
-                <li><a href="contact.html" class="block py-3 px-6 hover:bg-gray-700">Contact</a></li>
-            </ul>
-        </div>
+    <div
+      id="menu-overlay"
+      class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-90 hidden"
+    >
+      <!-- Mobile Navigation Content -->
+      <div class="flex items-center justify-center h-full">
+        <ul class="text-white text-lg">
+          <li><a href="" class="block py-3 px-6 hover:bg-gray-700">Home</a></li>
+          <li>
+            <a href="about.html" class="block py-3 px-6 hover:bg-gray-700"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="portfolio.html" class="block py-3 px-6 hover:bg-gray-700"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="block py-3 px-6 hover:bg-gray-700"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-
     <script src="src/script.js"></script>
-
-</body>
-
+  </body>
 </html>
