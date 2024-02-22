@@ -1,84 +1,136 @@
 <!DOCTYPE html>
 <html lang="ee">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="res/k.png" type="image/png">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="res/k.png" type="image/png" />
+    <link href="/css/stylesheet.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
     <link
-      href="/css/stylesheet.css"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>About Katariina Ingerma</title>
-</head>
+  </head>
 
-<body class="flex flex-col min-h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white  bg-cover bg-fixed"">
+  <body
+    class="flex flex-col min-h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white bg-cover bg-fixed"
+  >
     <!-- Navigation Bar -->
     <header class="py-2">
-        <div class="flex items-center justify-between px-5">
-            <div>
-                <h1 class="text-xl font-mono font-bold hover:text-pink-700">Katariina Ingerma</h1>
-            </div>
-            <!-- Mobile Navigation - Burger Menu -->
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav class="hidden md:flex items-center justify-end p-5 text-gray-400">
-                <ul class="flex space-x-10">
-                    <li><a href="index.html" class="text-lg hover:text-pink-700">Home</a></li>
-                    <li><a href="about.html" class="text-lg hover:text-pink-700 active">About</a></li>
-                    <li><a href="portfolio.html" class="text-lg hover:text-pink-700">Projects</a></li>
-                    <li><a href="contact.html" class="text-lg hover:text-pink-700">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="flex items-center justify-between px-5">
+        <div>
+          <h1 class="text-xl font-mono font-bold hover:text-pink-700">
+            Katariina Ingerma
+          </h1>
         </div>
+        <!-- Mobile Navigation - Burger Menu -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="hidden md:flex items-center justify-end p-5 text-gray-400">
+          <ul class="flex space-x-10">
+            <li>
+              <a href="index.html" class="text-lg hover:text-pink-700">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-lg hover:text-pink-700 active"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="text-lg hover:text-pink-700"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="text-lg hover:text-pink-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Section 1: About Katariina Ingerma -->
     <div class="flex-1 flex flex-col md:flex-row items-center justify-center">
-        <section class="md:flex-1 text-center p-8 bg-opacity-90">
-            <h1 class="text-4xl font-bold text-gray-100 pb-5">About me</h1>
-            <p class="pt-5 pb-2 font-mono text-xl text-gray-400">I am a Computer Science student at the University of Tartu graduating at 2024.</p>
-            <p class="pb-2 font-mono text-xl text-gray-400">My current focus revolves around my thesis, where I aim to distinguish between human-authored and machine-generated (English) text.</p>
-            
-            <p class="pb-2 font-mono text-xl text-gray-400">I secured victory in the Telia Cyber Battle of Nordic-Baltics 2023 Women's League, an esteemed ethical hacking competition.</p>
-            <p class="pb-2 font-mono text-xl text-gray-400 pt-10">SKILLS:</p>
-            <ul class="text-gray-400">
-                <li>Programming Languages: Python, Java, (R)</li>
-                <li>Web Development: HTML, CSS, JavaScript, React, Bootstrap</li>
-                <li>Machine Learning: Scikit-Learn, TensorFlow, Keras</li>
-                <li>Data Science Libraries: Pandas, NumPy, Matplotlib</li>
-                <li>Natural Language Processing (NLP): NLTK, estNLTK</li>
-                <li>Database: Postgres</li>
-                <li>Testing: Cypress, Unit Tests</li>
-                <li>Version Control: Git, Gitlab, Github</li>
-                <li>DevOps: Ansible, Docker, Kubernetes</li>
-            </ul>
-        </section>
+      <section class="md:flex-1 text-center p-8 bg-opacity-90">
+        <h1 class="text-4xl font-bold text-gray-100 pb-5">About me</h1>
+        <p class="pt-5 pb-2 font-mono text-xl text-gray-400">
+          I am a Computer Science student at the University of Tartu graduating
+          at 2024.
+        </p>
+        <p class="pb-2 font-mono text-xl text-gray-400">
+          My current focus revolves around my thesis, where I aim to distinguish
+          between human-authored and machine-generated (English) text.
+        </p>
+
+        <p class="pb-2 font-mono text-xl text-gray-400">
+          I secured victory in the Telia Cyber Battle of Nordic-Baltics 2023
+          Women's League, an esteemed ethical hacking competition.
+        </p>
+        <p class="pb-2 font-mono text-xl text-gray-400 pt-10">SKILLS:</p>
+        <ul class="text-gray-400">
+          <li>Programming Languages: Python, Java, (R)</li>
+          <li>Web Development: HTML, CSS, JavaScript, React, Bootstrap</li>
+          <li>Machine Learning: Scikit-Learn, TensorFlow, Keras</li>
+          <li>Data Science Libraries: Pandas, NumPy, Matplotlib</li>
+          <li>Natural Language Processing (NLP): NLTK, estNLTK</li>
+          <li>Database: Postgres</li>
+          <li>Testing: Cypress, Unit Tests</li>
+          <li>Version Control: Git, Gitlab, Github</li>
+          <li>DevOps: Ansible, Docker, Kubernetes</li>
+        </ul>
+      </section>
     </div>
     <!-- Mobile Navigation Overlay -->
-    <div id="menu-overlay" class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-90 hidden">
-        <!-- Mobile Navigation Content -->
-        <div class="flex items-center justify-center h-full">
-            <ul class="text-white text-lg">
-                <li><a href="" class="block py-3 px-6 hover:bg-gray-700">Home</a></li>
-                <li><a href="about.html" class="block py-3 px-6 hover:bg-gray-700">About</a></li>
-                <li><a href="portfolio.html" class="block py-3 px-6 hover:bg-gray-700">Projects</a></li>
-                <li><a href="contact.html" class="block py-3 px-6 hover:bg-gray-700">Contact</a></li>
-            </ul>
-        </div>
+    <div
+      id="menu-overlay"
+      class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-90 hidden"
+    >
+      <!-- Mobile Navigation Content -->
+      <div class="flex items-center justify-center h-full">
+        <ul class="text-white text-lg">
+          <li><a href="" class="block py-3 px-6 hover:bg-gray-700">Home</a></li>
+          <li>
+            <a href="about.html" class="block py-3 px-6 hover:bg-gray-700"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="portfolio.html" class="block py-3 px-6 hover:bg-gray-700"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="block py-3 px-6 hover:bg-gray-700"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="src/script.js"></script>
-</body>
-
+  </body>
 </html>
