@@ -14,7 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <title>Emergency Alert App</title>
+    <title>Tweet Sentiment Prediction</title>
     <!-- Font Awesome Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -106,7 +106,7 @@
           <i class="fas fa-arrow-left mb-4"></i> Back to Portfolio
         </a>
         <h1 class="text-4xl font-bold text-gray-100 pb-5">
-          Text Classification of Estonian Articles
+          Tweet Sentiment Prediction
         </h1>
         <!-- Technologies Used -->
         <div class="flex justify-center items-center mb-8 space-x-4">
@@ -123,39 +123,31 @@
             About the project
           </h2>
           <p class="text-gray-400 font-mono">
-            This project involved the application of natural language processing
-            and machine learning techniques to categorize Estonian articles.
-            Various models, including Bag-of-Words, TF-IDF, and Word2Vec, were
-            implemented for text classification. The project aimed to accurately
-            classify articles into predefined categories ("www.advent.ee",
-            "www.bioneer.ee", "www.lapsemure.ee", "www.naisteleht.ee",
-            "arvamus.postimees.ee").
+            This project focuses on sentiment prediction for tweets using
+            machine learning techniques. After preprocessing the dataset, which
+            includes cleaning the text by removing numerical values, stop words,
+            punctuation, mentions, and URLs, the sentiment column is mapped to
+            numerical values: negative sentiment is represented as 0, neutral as
+            1, and positive as 2.
+            <br><br>
+            Two models are trained and evaluated: logistic
+            regression and a Naive Bayes classifier. The logistic regression
+            model achieves an accuracy of approximately 68.47% on the test data,
+            while the Naive Bayes classifier achieves an accuracy of around
+            62.43%. These models enable the classification of tweets into one of
+            three categories: negative, neutral, or positive, based on their
+            sentiment.
           </p>
         </div>
-        <!-- Project Screens -->
-        <div class="grid my-10">
-          <!-- Screen 1 -->
-          <h2 class="text-2xl font-bold text-gray-200 mb-4">
-            Model accuracy comparison
-          </h2>
-          <div>
-            <a
-              href="../res/web1-2.png"
-              data-lightbox="screens"
-              data-title="Emergency Alert App - Screen 1"
-            >
-              <img src="../res/data1-1.png" alt="" class="rounded-md" />
-            </a>
-          </div>
-        </div>
+    
 
-        <!-- GitLab Link -->
+        <!-- Github Link -->
         <div class="mt-8">
           <h2 class="text-2xl font-bold text-gray-200 mb-2">
             Github Repository
           </h2>
           <a
-            href="https://github.com/KatariinaIngerma/Text-classification"
+            href="https://github.com/KatariinaIngerma/Tweet_sentiment_prediction"
             target="_blank"
             class="text-pink-500 hover:underline"
             >Github Repository</a
