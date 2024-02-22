@@ -123,28 +123,28 @@
             About the project
           </h2>
           <p class="text-gray-400 font-mono">
-            This project involved the application of natural language processing
-            and machine learning techniques to categorize Estonian articles.
-            Various models, including Bag-of-Words, TF-IDF, and Word2Vec, were
-            implemented for text classification. The project aimed to accurately
-            classify articles into predefined categories ("www.advent.ee",
-            "www.bioneer.ee", "www.lapsemure.ee", "www.naisteleht.ee",
-            "arvamus.postimees.ee").
+            This project aims to recommend books similar to a given book using
+            the Nearest Neighbors algorithm. After importing and cleaning the
+            dataset containing book ratings, the Nearest Neighbors model is
+            trained on a pivot table representing user-book interactions. The
+            model computes distances between books based on user ratings. The
+            get_recommends function takes a book title as input and returns a
+            list of 5 similar books along with their distances from the input
+            book. The project successfully passes a test verifying its
+            functionality.
           </p>
         </div>
         <!-- Project Screens -->
         <div class="grid my-10">
-          <!-- Screen 1 -->
-          <h2 class="text-2xl font-bold text-gray-200 mb-4">
-            Model accuracy comparison
-          </h2>
+          
           <div>
             <a
-              href="../res/web1-2.png"
+              href="../res/data4-1.png"
               data-lightbox="screens"
-              data-title="Emergency Alert App - Screen 1"
+              data-title="Screen 1"
+              class="flex justify-center"
             >
-              <img src="../res/data1-1.png" alt="" class="rounded-md" />
+              <img src="../res/data4-1.png" alt="" class="rounded-md justify-center" />
             </a>
           </div>
         </div>
@@ -155,7 +155,7 @@
             Github Repository
           </h2>
           <a
-            href="https://github.com/KatariinaIngerma/Text-classification"
+            href="https://github.com/KatariinaIngerma/Book-Recommendations-KNN"
             target="_blank"
             class="text-pink-500 hover:underline"
             >Github Repository</a
