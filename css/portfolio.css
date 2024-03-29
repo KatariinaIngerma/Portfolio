@@ -25,3 +25,8 @@
     top: 10px;
     right: 10px;
 }
+
+.project-card {
+    background-color: #f7fafc; /* Set background color to gray-100 */
+}
+

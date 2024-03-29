@@ -24,115 +24,490 @@
     <title>Hello</title>
   </head>
 
-  <body
-    class="flex flex-col min-h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white bg-cover bg-fixed"
-  >
-    <!-- Navigation Bar -->
-    <header class="py-2">
-      <div class="flex items-center justify-between px-5 text-gray-400">
-        <div>
-          <h1 class="text-xl font-mono font-bold hover:text-pink-700">
-            Katariina Ingerma
-          </h1>
+  <body>
+    <div class="background">
+      <!-- Navigation Bar -->
+      <header class="py-2">
+        <div
+          class="fixed top-0 flex items-center justify-between px-5 text-gray-400 w-full"
+        >
+          <div>
+            <a href="/" class="text-xl font-mono font-bold hover:text-pink-700">
+              KATARIINA INGERMA
+            </a>
+          </div>
+          <!-- Mobile Navigation - Burger Menu -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <nav
+            class="hidden md:flex items-center justify-end p-5 text-gray-400"
+          >
+            <ul class="flex space-x-10">
+              <li>
+                <a
+                  href="/"
+                  class="text-lg hover:text-pink-700 active nav-link"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="text-lg hover:text-pink-700">About</a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-lg hover:text-pink-700 active:text-pink-700"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-lg hover:text-pink-700 active:text-pink-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-        <!-- Mobile Navigation - Burger Menu -->
-        <div class="md:hidden">
-          <button id="menu-toggle" class="text-white focus:outline-none">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+      </header>
+      <!--Section 1-->
+      <div class="flex items-center justify-center min-h-screen">
+        <!-- Section 1: Hello -->
+        <section id="hello" class="text-center">
+          <h1 class="text-7xl font-bold text-gray-100">Katariina Ingerma</h1>
+          <p class="pt-10 pb-2 font-mono text-xl text-gray-400">
+            Computer Science student based in Tallinn.
+          </p>
+          <p class="pb-5 font-mono text-xl text-gray-400">
+            Interested in software egineering and data science.
+          </p>
+          <a href="contact.html">
+            <button
+              class="text-lg m-5 text-white bg-pink-500 py-2 px-6 rounded-full focus:outline-none focus:shadow-outline-blue transform hover:scale-110 transition-transform duration-300 ease-in-out"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
+              Contact me <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </a>
+          <!-- Social Media Icons -->
+          <div class="flex justify-center mt-5">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/katariina-ingerma-b7ab861a9/"
+              target="_blank"
+              class="text-gray-400 hover:text-white mx-4"
+            >
+              <i class="fab fa-linkedin text-3xl"></i>
+            </a>
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/katariinaingerma/"
+              target="_blank"
+              class="text-gray-400 hover:text-white mx-4"
+            >
+              <i class="fab fa-facebook text-3xl"></i>
+            </a>
+            <a
+              href="https://github.com/KatariinaIngerma"
+              target="_blank"
+              class="text-gray-400 hover:text-white mx-4"
+            >
+              <i class="fab fa-github text-3xl"></i>
+            </a>
+          </div>
+        </section>
+        <!-- Section 2: Picture -->
+        <div class="hidden md:flex-1 mt-20">
+          <!-- You can replace the placeholder image URL with your actual image URL -->
+          <img
+            src="res/img3.png"
+            alt="Profile Picture"
+            class="w-4/5 h-auto mx-auto object-cover"
+            loading="lazy"
+          />
         </div>
-        <nav class="hidden md:flex items-center justify-end p-5 text-gray-400">
-          <ul class="flex space-x-10">
-            <li>
-              <a href="" class="text-lg hover:text-pink-700 active nav-link"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="about.html" class="text-lg hover:text-pink-700">About</a>
-            </li>
-            <li>
-              <a
-                href="portfolio.html"
-                class="text-lg hover:text-pink-700 active:text-pink-700"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="text-lg hover:text-pink-700 active:text-pink-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    <!--Section 1-->
-    <div
-      class="flex-1 flex flex-col md:flex-row items-center justify-center relative"
-    >
-      <!-- Section 1: Hello -->
-      <section class="md:flex-1 text-center p-8 bg-opacity-90">
-        <h1 class="text-7xl font-bold text-gray-100">Katariina</h1>
-        <h1 class="text-7xl font-bold text-gray-100">Ingerma</h1>
-        <p class="pt-10 pb-2 font-mono text-xl text-gray-400">
-          Computer Science student based in Tallinn.
-        </p>
-        <p class="pb-5 font-mono text-xl text-gray-400">
-          Interested in data science, NLP and machine learning.
-        </p>
-        <a href="contact.html">
-          <button
-            class="text-lg m-5 text-white bg-pink-500 py-2 px-6 rounded-full focus:outline-none focus:shadow-outline-blue transform hover:scale-110 transition-transform duration-300 ease-in-out"
-          >
-            Contact me <i class="fas fa-arrow-right ml-2"></i>
-          </button>
-        </a>
-        <!-- Social Media Icons -->
-        <div class="flex justify-center mt-5">
-          <!-- LinkedIn -->
-          <a
-            href="https://www.linkedin.com/in/katariina-ingerma-b7ab861a9/"
-            target="_blank"
-            class="text-gray-400 hover:text-white mx-4"
-          >
-            <i class="fab fa-linkedin text-3xl"></i>
-          </a>
-          <!-- Facebook -->
-          <a
-            href="https://www.facebook.com/katariinaingerma/"
-            target="_blank"
-            class="text-gray-400 hover:text-white mx-4"
-          >
-            <i class="fab fa-facebook text-3xl"></i>
-          </a>
+      <section id="about">
+        <div
+          class="flex-1 flex flex-col md:flex-row items-center justify-center min-h-screen"
+        >
+          <section class="md:flex-1 text-center p-8 bg-opacity-90">
+            <h1 class="text-4xl font-bold text-gray-100 pb-5">About me</h1>
+            <p class="pt-5 pb-2 font-mono text-xl text-gray-400">
+              I am a Computer Science student at the University of Tartu
+              graduating at 2024.
+            </p>
+            <p class="pb-2 font-mono text-xl text-gray-400">
+              My current focus revolves around my thesis, where I aim to
+              distinguish between human-authored and machine-generated (English)
+              text. I am using neural language models for machine-generated text
+              detection and subsequently, I will identify the specific models
+              used in generating the texts.
+            </p>
+
+            <p class="pb-2 font-mono text-xl text-gray-400">
+              I secured victory in the Telia Cyber Battle of Nordic-Baltics 2023
+              Women's League, an esteemed ethical hacking competition.
+            </p>
+            <p class="pb-2 font-mono text-xl text-gray-400 pt-10">SKILLS:</p>
+            <ul class="text-gray-400">
+              <li>Programming Languages: Python, Java, (R)</li>
+              <li>Web Development: HTML, CSS, JavaScript, React, Bootstrap</li>
+              <li>Machine Learning: Scikit-Learn, TensorFlow, Keras</li>
+              <li>Data Science Libraries: Pandas, NumPy, Matplotlib,</li>
+              <li>
+                Natural Language Processing (NLP): NLTK, estNLTK,
+                (LexicalRichness, textacy)
+              </li>
+              <li>Database: Postgres</li>
+              <li>Testing: Cypress, Unit Tests</li>
+              <li>Version Control: Git, Gitlab, Github</li>
+              <li>DevOps: Ansible, Docker, Kubernetes</li>
+            </ul>
+          </section>
         </div>
       </section>
-      <!-- Section 2: Picture -->
-      <div class="md:flex-1 mt-20">
-        <!-- You can replace the placeholder image URL with your actual image URL -->
-        <img
-          src="res/img3.png"
-          alt="Profile Picture"
-          class="w-4/5 h-auto mx-auto object-cover"
-          loading="lazy"
-        />
+
+      <!-- Section 1: Portfolio -->
+      <section id="projects"></section>
+      <div class="flex-1 flex items-center justify-center">
+        <section class="text-center p-8 bg-opacity-90 px-10 lg:px-20 lg:px-36">
+          <div class="flex flex-col items-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-100 pb-10">My Projects</h1>
+            <!-- Project Tabs -->
+            <div
+              class="mb-4 md:mb-8 flex flex-wrap md:flex-row md:items-center"
+            >
+              <button
+                onclick="filterProjects('all')"
+                class="bg-gray-700 text-white px-4 py-2 mr-2 mb-2 focus:outline-none md:mb-0 rounded-full"
+              >
+                All
+              </button>
+              <button
+                onclick="filterProjects('data-science')"
+                class="bg-gray-700 text-white px-4 py-2 mr-2 mb-2 focus:outline-none md:mb-0 rounded-full"
+              >
+                Data Science Projects
+              </button>
+              <button
+                onclick="filterProjects('web')"
+                class="bg-gray-700 text-white px-4 py-2 mr-2 mb-2 focus:outline-none md:mb-0 rounded-full"
+              >
+                Web Projects
+              </button>
+            </div>
+          </div>
+          <!-- Project Cards -->
+          <div
+            id="projects"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left"
+          >
+            <!-- Web Project 1 -->
+            <a
+              href="projects/web_project1.html"
+              class="project-card web p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Web
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Emergency Alert App
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                The Wildlife Emergency Application is an upcoming web
+                application that aims to provide a platform to cohesively
+                coordinate the wildlife rescue efforts in Estonia.
+              </p>
+            </a>
+            <!-- Data Science Project 1 -->
+            <a
+              href="projects/data_project1.html"
+              class="project-card data-science p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Data
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Text Classification of Estonian Articles
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                The models include Bag-of-words, Bag-of-words with lemmas,
+                Bag-of-words with lemmas and stop-words, Word2Vec, and Word2Vec
+                with preprocessing.
+              </p>
+            </a>
+            <!-- Data Science Project 3 -->
+            <a
+              href="projects/data_project3.html"
+              class="project-card data-science p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Data
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Image Classification with Convolutional Neural Networks
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                Using a deep learning model to classify images as either cats or
+                dogs. It is based on the Keras library and trained on a dataset
+                of cat and dog images.
+              </p>
+            </a>
+
+            <!-- Web Project 3 -->
+            <a
+              href="projects/web_project3.html"
+              class="project-card web p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Web
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">Todo list</h1>
+              <p class="font-mono text-gray-400 mb-4">
+                Simple todo list with Javascript. Saves tasks to localstorage.
+              </p>
+            </a>
+
+            <!-- Web Project 3 -->
+            <a
+              href="projects/web_project5.html"
+              class="project-card web p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Web
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Spotify player app
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                Spotify player using React and Spotify API.
+              </p>
+            </a>
+
+            <!-- Data Science Project 2 -->
+            <a
+              href="projects/data_project2.html"
+              class="project-card data-science p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Data
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Text Classification of Estonian Articles with Neural Networks
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                Utilizing LSTM in Keras and fine-tuning a BERT model.
+              </p>
+            </a>
+            <!-- Web Project 2 -->
+            <a
+              href="projects/web_project2.html"
+              class="project-card web p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Web
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Website for beauty artist
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">HTML, CSS, JS website.</p>
+            </a>
+
+            <!-- Data Science Project 7 -->
+            <a
+              href="projects/data_project7.html"
+              class="project-card data-science p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Data
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Levenshtein distance in Python
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                Levenshtein distance between two words is the minimum number of
+                single-character edits (insertions, deletions or substitutions)
+                required to change one word into the other.
+              </p>
+            </a>
+
+            <!-- Data Science Project 6 -->
+            <a
+              href="projects/data_project6.html"
+              class="project-card data-science p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Data
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                POS taggers for Estonian text
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                The task of this project is to develop different POS taggers for
+                Estonian texts.
+              </p>
+            </a>
+
+            <!-- Data Science Project 4 -->
+            <a
+              href="projects/data_project4.html"
+              class="project-card data-science p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Data
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Book Recommendation
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                This project implements a book recommendation algorithm using
+                the K-Nearest Neighbors (KNN) algorithm. The algorithm utilizes
+                the Book-Crossings dataset, which contains 1.1 million ratings
+                of 270,000 books by 90,000 users.
+              </p>
+            </a>
+
+            <!-- Web Project 3 
+            <a
+              href="projects/web_project4.html"
+              class="project-card web p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Web
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">Web design</h1>
+              <p class="font-mono text-gray-400 mb-4">
+                Web designs and prototypes usign Figma and Marvel.
+              </p>
+            </a>
+          -->
+
+            <!-- Data Science Project 5 -->
+            <a
+              href="projects/data_project5.html"
+              class="project-card data-science p-4 rounded-md block"
+            >
+              <p
+                class="bg-pink-500 font-bold px-3 py-2 ml-2 rounded-full inline-block"
+              >
+                Data
+              </p>
+              <h1 class="text-3xl font-bold text-gray-200 my-5">
+                Tweet Sentiment Prediction
+              </h1>
+              <p class="font-mono text-gray-400 mb-4">
+                The task of this project is to create a model that predicts
+                whether a tweet has a positive, neutral, or negative tone.
+              </p>
+            </a>
+          </div>
+        </section>
+
+
+        
       </div>
+      <section id="contact" class="px-5 py-20 text-center h-screen">
+        <h1 class="text-5xl font-bold mb-6 text-gray-100">Send Me a Message!</h1>
+        <p class="text-lg mb-6 font-mono text-gray-200">
+          Feel free to reach out if you have any questions.
+        </p>
+  
+        <!-- Contact Form -->
+        <form
+        action="https://formspree.io/f/xjvnwlyj" 
+          method="post"
+          class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 text-left"
+        >
+          <div class="mb-4 col-span-2 md:col-span-1">
+            <label for="name" class="text-white text-sm font-semibold block mb-2"
+              >Your Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              class="w-full px-4 py-2 border-b-2 border-gray-600 focus:outline-none focus:border-pink-700 bg-transparent"
+            />
+          </div>
+  
+          <div class="mb-4 col-span-2 md:col-span-1">
+            <label for="email" class="text-white text-sm font-semibold block mb-2"
+              >Your Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              class="w-full px-4 py-2 border-b-2 border-gray-600 focus:outline-none focus:border-pink-700 bg-transparent"
+            />
+          </div>
+  
+          <div class="mb-4 col-span-2">
+            <label
+              for="message"
+              class="text-white text-sm font-semibold block mb-2"
+              >Your Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Type your message here..."
+              class="w-full px-4 py-2 border-b-2 border-gray-600 focus:outline-none focus:border-pink-700 bg-transparent"
+            ></textarea>
+          </div>
+  
+          <div class="col-span-2 flex items-center justify-center">
+            <button
+              type="submit"
+              class="text-lg text-white bg-pink-500 py-2 px-6 rounded-full focus:outline-none focus:shadow-outline-blue transform hover:scale-110 transition-transform duration-300 ease-in-out"
+            >
+              Send Message <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </form>
+      </section>
     </div>
 
     <!-- Optional: Mobile Navigation Overlay -->
@@ -145,17 +520,17 @@
         <ul class="text-white text-lg">
           <li><a href="" class="block py-3 px-6 hover:bg-gray-700">Home</a></li>
           <li>
-            <a href="about.html" class="block py-3 px-6 hover:bg-gray-700"
+            <a href="#about" class="block py-3 px-6 hover:bg-gray-700"
               >About</a
             >
           </li>
           <li>
-            <a href="portfolio.html" class="block py-3 px-6 hover:bg-gray-700"
+            <a href="#projects" class="block py-3 px-6 hover:bg-gray-700"
               >Projects</a
             >
           </li>
           <li>
-            <a href="contact.html" class="block py-3 px-6 hover:bg-gray-700"
+            <a href="#contact" class="block py-3 px-6 hover:bg-gray-700"
               >Contact</a
             >
           </li>

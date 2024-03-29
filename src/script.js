@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (
       !menuToggle.contains(event.target) &&
       !menuOverlay.contains(event.target)
+      
     ) {
       menuOverlay.classList.add("hidden");
     }
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Prevent clicks inside the menu from closing it
   menuOverlay.addEventListener("click", function (event) {
     event.stopPropagation();
+    menuOverlay.classList.add("hidden");
   });
 });
 
