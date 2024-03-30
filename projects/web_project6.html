@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ee">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>OpenAPI books</title>
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="flex flex-col h-screen justify-between bg-gradient-to-r from-gray-900 to-gray-800 text-white"
+  >
+    <!-- Navigation Bar -->
+    <header class="py-2 text-gray-400">
+      <div class="flex items-center justify-between px-5">
+        <div>
+          <h1 class="text-xl font-mono font-bold hover:text-pink-700">
+            Katariina Ingerma
+          </h1>
+        </div>
+        <!-- Mobile Navigation - Burger Menu -->
+        <div class="hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="hidden items-center justify-end p-5">
+          <ul class="flex space-x-10">
+            <li>
+              <a
+                href="../index.html"
+                class="text-lg text-black-500 hover:text-pink-700"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../about.html"
+                class="text-lg text-black-500 hover:text-pink-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="../portfolio.html"
+                class="text-lg text-black-500 hover:text-pink-700 active:text-pink-700"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="../contact.html"
+                class="text-lg text-black-500 hover:text-pink-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section: Project Details -->
+    <section class="text-center p-8 bg-opacity-90">
+      <div class="max-w-4xl mx-auto">
+        <!-- Back to Portfolio Button -->
+        <a
+          href="../index.html#projects"
+          class="text-lg text-pink-500 hover:text-white"
+        >
+          <i class="fas fa-arrow-left mb-4"></i> Back to Portfolio
+        </a>
+        <h1 class="text-4xl font-bold text-gray-100 pb-5">
+          REST OpenAPI for downloading e-books.
+        </h1>
+        <!-- Technologies Used -->
+        <div class="flex justify-center items-center mb-8 space-x-4">
+          <i class="fab fa-python text-4xl text-gray-200"></i>
+        </div>
+        <!--About the projct-->
+        <div class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-200 mb-2">
+            About the project
+          </h2>
+          <p class="text-gray-400 font-mono">
+            This project involves building a REST API for various
+            functionalities including downloading books from Gutenberg to the
+            server, requesting book content, managing books, and searching for
+            words within books. The REST API is implemented using the Python
+            Flask framework, which offers a straightforward approach to creating
+            RESTful web services. Additionally, an OpenAPI specification was
+            created for the API, and server-side code was generated using the
+            OpenAPI generator.
+          </p>
+        </div>
+
+        <!-- Github Link -->
+        <div class="mt-8">
+          <h2 class="text-2xl font-bold text-gray-200 mb-2">
+            Github Repository
+          </h2>
+          <a
+            href="https://github.com/KatariinaIngerma/OpenAPI-books/tree/main"
+            target="_blank"
+            class="text-pink-500 hover:underline"
+            >Github Repository</a
+          >
+        </div>
+      </div>
+    </section>
+    <div
+      id="menu-overlay"
+      class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-90 hidden"
+    >
+      <!-- Mobile Navigation Content -->
+      <div class="flex items-center justify-center h-full">
+        <ul class="text-white text-lg">
+          <li>
+            <a href="../index.html" class="block py-3 px-6 hover:bg-gray-700"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="../about.html" class="block py-3 px-6 hover:bg-gray-700"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="../portfolio.html"
+              class="block py-3 px-6 hover:bg-gray-700"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="../contact.html" class="block py-3 px-6 hover:bg-gray-700"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="../src/script.js"></script>
+  </body>
+</html>
